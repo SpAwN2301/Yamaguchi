@@ -8,11 +8,13 @@
     -webkit-tap-highlight-color: transparent; 
     transition: .5s;
 }
+
 .ergonomic {
     padding: 50px 12px;
     
     background-color: #F3F3F3;
 }
+
 .ergonomic__title {
     margin-bottom: 30px;
 
@@ -24,6 +26,7 @@
 
     color: #0B64FE;
 }
+
 .ergonomic__descrip {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -160,7 +163,7 @@
     flex-direction: column;
     align-items: center;
 
-    display: none;
+    opacity: 0;
 }
 
 .bot__girl {
