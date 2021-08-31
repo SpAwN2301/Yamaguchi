@@ -1,0 +1,124 @@
+.ergonomic {
+  padding: 12px;
+  min-height: 100vh;
+  background-color: #F3F3F3;
+}
+
+.ergonomic__title {
+  margin-bottom: 30px;
+  font-family: 'Bebas Neue', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 100%;
+  color: #0B64FE;
+}
+
+.ergonomic__descrip {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 170%;
+  /* or 27px */
+  color: #181818;
+}
+
+.ergonomic__descrip_desktop {
+  display: none;
+}
+
+.ergonomic__descrip_mobile {
+  display: block;
+}
+
+@media screen and (min-width: 768.5px) {
+  .ergonomic__descrip_mobile {
+    display: none;
+  }
+  .ergonomic__descrip_desktop {
+    display: block;
+  }
+}
+
+.table {
+  position: relative;
+  margin-bottom: 30px;
+  min-height: 270px;
+  max-width: 780px;
+}
+
+.table__top {
+  -webkit-transform: translateY(45px);
+          transform: translateY(45px);
+  -webkit-transition: .5s;
+  transition: .5s;
+  width: 100%;
+  height: auto;
+}
+
+.table__top > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.table__bottom {
+  width: 100%;
+  height: auto;
+}
+
+.table__bottom > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.button {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 61px;
+  height: 61px;
+  border: none;
+  border-radius: 50%;
+  background-color: #A6FFFF;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12.2752px;
+  line-height: 170%;
+  /* or 21px */
+  color: #000000;
+}
+
+.button__wrapper {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 144px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+/*# sourceMappingURL=style.min.css.map */

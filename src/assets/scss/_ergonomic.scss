@@ -1,0 +1,45 @@
+.ergonomic {
+    padding: 12px;
+    min-height: 100vh;
+
+    background-color: #F3F3F3;
+
+    &__title {
+        margin-bottom: 30px;
+
+        font-family: 'Bebas Neue', cursive;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 100%;
+
+        color: #0B64FE;
+    }
+    &__descrip {
+        font-family: 'Ubuntu', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 170%;
+        /* or 27px */
+
+        color: #181818;
+        &_desktop {
+            display: none;
+        }
+        &_mobile {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 768.5px) {
+    .ergonomic__descrip{
+        &_mobile {
+            display: none;
+        }
+        &_desktop {
+            display: block;
+        }
+    }
+}

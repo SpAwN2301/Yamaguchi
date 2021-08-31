@@ -1,0 +1,16 @@
+@import '_ergonomic.scss';
+@import '_table.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
