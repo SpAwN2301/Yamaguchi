@@ -24,7 +24,7 @@ windowScroll.addEventListener('scroll', ()=>{
     console.log(dist)
 
     if(dist >= -50 && dist <= 650) {
-        animatedBox.style.display = 'flex'
+        animatedBox.style.opacity = '1'
         animatedGirl.classList.add('animate_appearance');
         animatedHole.classList.add('animate_resize');
 
