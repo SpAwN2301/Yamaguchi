@@ -1,5 +1,6 @@
 .table {
     position: relative;
+    margin: 0 auto;
     margin-bottom: 30px;
 
     min-height: 270px;
@@ -20,7 +21,6 @@
     }
 
     &__bottom {
-
         width: 100%;
         height: auto;
 
@@ -33,6 +33,7 @@
 }
 
 .button {
+    cursor: pointer;
     display: grid;
     place-content: center;
 

@@ -10,7 +10,7 @@
         font-family: 'Bebas Neue', cursive;
         font-style: normal;
         font-weight: bold;
-        font-size: 38px;
+        font-size: 38px; //38 - 62
         line-height: 100%;
 
         color: #0B64FE;
@@ -19,7 +19,7 @@
         font-family: 'Ubuntu', sans-serif;
         font-style: normal;
         font-weight: 300;
-        font-size: 16px;
+        font-size: 16px; //12 - 22
         line-height: 170%;
         /* or 27px */
 
@@ -28,17 +28,6 @@
             display: none;
         }
         &_mobile {
-            display: block;
-        }
-    }
-}
-
-@media screen and (min-width: 768.5px) {
-    .ergonomic__descrip{
-        &_mobile {
-            display: none;
-        }
-        &_desktop {
             display: block;
         }
     }
