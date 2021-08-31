@@ -5,12 +5,12 @@
     box-sizing: border-box;
 
     outline: none;
-    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent; 
+    transition: .5s;
 }
-
 .ergonomic {
     padding: 50px 12px;
-
+    
     background-color: #F3F3F3;
 }
 .ergonomic__title {
@@ -159,6 +159,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    display: none;
 }
 
 .bot__girl {
@@ -167,7 +169,7 @@
 
 .bot__hole {
     position: relative;
-    width: 60%;
+    width: 200px;
 }
 
 .hole {
@@ -185,8 +187,8 @@
 }
 
 .helper__mobile {
-    width: 100%;
-    margin: 50px 0;
+    width: 350px;
+    margin: 50px auto;
 }
 
 .helper__mobile > img {
@@ -194,7 +196,21 @@
     width: 100%;
     height: auto;
 
+    margin: 0 auto;
+
     transform: scale(1.2);
+}
+
+.helper__subtitle-wrapper_desktop {
+    display: none;
+}
+
+.helper__subtitle-wrapper_mobile {
+    display: block;
+}
+
+.helper__mobile > img {
+    transform: unset;
 }
 
 .helper__subtitle {
@@ -207,6 +223,10 @@
 }
 
 .helper__subtitle_left {
+    padding-left: 40px;
+}
+
+.helper__subtitle_big {
     font-weight: normal;
     font-size: 50px;
 }
@@ -251,6 +271,50 @@
         width: clamp(90px, 1rem + 7vw, 150px);
         height: clamp(90px, 1rem + 7vw, 150px);
     }
+
+    .helper {
+        padding: 72px 100px;
+    }
+
+    .helper > .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .helper__title {
+        font-size: 56px;
+        margin-bottom: 60px;
+    }
+
+    .helper__descrip {
+        margin-bottom: 50px;
+        max-width: 586px;
+        font-size: 22px;
+    }
+
+    .helper__subtitle {
+        font-size: 45px;
+    }
+
+    .helper__subtitle_big {
+        font-size: 55px;
+    }
+
+    .helper__subtitle-wrapper_desktop {
+        display: block;
+    }
+
+    .helper__subtitle-wrapper_mobile {
+        display: none;
+    }
+
+    .helper__mobile {
+        margin: unset;
+        width: 670px;
+    }
 }
 
 .animate_appearance {
@@ -259,6 +323,10 @@
 
 .animate_resize {
     animation: 3s ease-in resize;
+}
+
+.animate_levitate {
+    animation: 3s ease-in levitate infinite alternate;
 }
 
 @keyframes appearance {
@@ -271,7 +339,13 @@
 }
 
 @keyframes resize {
-    30% {
-        width: 100%;
+    40% {
+        width: 300px;
+    }
+}
+
+@keyframes levitate {
+    100% {
+        transform: translateY(30px);
     }
 }
